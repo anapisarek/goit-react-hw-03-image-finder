@@ -4,16 +4,16 @@ import css from './ImageGallery.module.css';
 
 export const ImageGallery = ({ data }) => {
   return (
-    <ul className={css.imageGallery}>
-      {data.map(({ id, webformatURL, tags, largeImageURL }) => {
-        return (
-          <ImageGalleryItem
-            key={id}
-            webformatURL={webformatURL}
-            tags={tags}
-            largeImageURL={largeImageURL}
-          />
-        );
+  <ul className={css.imageGallery}>
+    {data.map(({ id, webformatURL, tags, largeImageURL }) => {
+      return (
+      <ImageGalleryItem
+      key={id}
+      webformatURL={webformatURL}
+      tags={tags}
+      largeImageURL={largeImageURL}
+      />
+      );
       })}
     </ul>
   );
